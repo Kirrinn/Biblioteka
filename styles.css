@@ -1,0 +1,272 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*index and forms*/
+.form-item {
+  padding: 5px;
+  padding-left: 0;
+}
+.form-item input {
+  padding: 5px;
+}
+.form-item select {
+  height: 30px;
+}
+
+.main {
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+}
+.login-form {
+  padding-top: 50px;
+  margin: auto;
+  height: 200px;
+  width: 400px;
+  background-color: whitesmoke;
+}
+
+.login-title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 400px;
+  margin: auto;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.login-error {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+.signup-btn-form{
+  padding-top: 5px;
+  height: 50px;
+  line-height: 50px;
+  width: 400px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+.signup-btn{
+  line-height: 40px;
+  height: 40px;
+  width: 60px;
+  display: inline-block;
+  background:  rgb(46, 48, 63);
+  border-radius: 5px; 
+}
+
+.signup-btn a{
+  color: white;
+  text-decoration: none;
+}
+
+/*signup page*/
+.signup-form{
+  padding-top: 20px;
+  margin: auto;
+  height: 200px;
+  width: 400px;
+  background-color: whitesmoke;
+}
+
+.back-btn-form{
+  padding-top: 5px;
+  height: 50px;
+  line-height: 50px;
+  width: 400px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+.back-btn{
+  line-height: 40px;
+  height: 40px;
+  width: 60px;
+  display: inline-block;
+  background:  rgb(46, 48, 63);
+  border-radius: 5px;
+}
+
+.back-btn a{
+  color: white;
+  text-decoration: none;
+}
+.signup-title{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 400px;
+  margin: auto;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+/*tables*/
+.row {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  background: green;
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+
+.header-row {
+  background: blueviolet !important;
+}
+
+.header-item {
+  color: white !important;
+  font-weight: bolder !important;
+}
+
+.title {
+  color: lightgreen;
+  font-weight: bolder;
+  width: 200px;
+  float: left;
+}
+
+.author {
+  color: white;
+  width: 150px;
+  float: left;
+}
+
+.year {
+  color: whitesmoke;
+  width: 120px;
+  float: left;
+}
+
+.genre {
+  color: whitesmoke;
+  width: 120px;
+  float: left;
+}
+
+.options {
+  
+  float: right;
+}
+
+.addBook{
+  
+  width: 120px;
+  float: left;
+  background-color: rgb(46, 48, 63);
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.addBook a{
+  color: rgb(184, 184, 170);
+  text-decoration: none;
+}
+
+.rent {
+  width: 70px;
+  display: inline-block;
+  background: yellow;
+
+}
+
+.busy {
+  width: 70px;
+  display: inline-block;
+  background: red;
+  color: white;
+
+}
+header{
+  height: 60px;
+  line-height: 60px;
+  background-color: black;
+  color: white;
+}
+.header-option{
+  float: right;
+  height: 60px;
+  width: 120px;
+  margin-left: 8px;
+  line-height: 60px;
+  background-color: rgb(46, 48, 63);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header-option a 
+{
+  color: rgb(184, 184, 170);
+  text-decoration: none;
+}
+
+.return-book-btn{
+  width: 70px;
+  
+  background: yellowgreen;
+  cursor: pointer;
+  float: right;
+}
+
+.name{
+  color: lightgreen;
+  font-weight: bolder;
+  width: 130px;
+  float: left;
+}
+.password{
+  color: whitesmoke;
+  width: 120px;
+  float: left;
+}
+.role{
+  color: whitesmoke;
+  width: 120px;
+  float: left;
+}
+
+.update-user-btn{
+  width: 60px;
+  display: inline-block;
+  background: yellow;
+}
+.delete-user-btn{
+  width: 60px;
+  display: inline-block;
+  background: red;
+  color: white;
+  margin-left: 8px;
+}
+.delete-user-btn a
+{
+  color: white;
+  text-decoration: none;
+}
+.form-item{
+  height: 30px;
+  line-height: 30px;
+  background: whitesmoke;
+  margin-bottom: 16px;
+
+}
+.input-box{
+  margin-left: 5px;
+}
+
+
+
