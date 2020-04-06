@@ -1,6 +1,6 @@
 <header>
     <div class="header-option">
-        <a href="logout.php"> LOGOUT </a>
+        <a href="handlers/logout.php"> LOGOUT </a>
     </div>
     <div class="header-option">
         <a href="books.php"> BOOKS </a>

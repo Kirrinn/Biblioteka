@@ -13,4 +13,4 @@ if (isset($_SESSION['user_id'])) {
 $sql = "UPDATE books SET user_id=null WHERE id=?";
 $stm = $dbh->prepare($sql);
 $stm->execute([$bookId]);
-header("Location:../profile.php");
+header("Location: ../profile.php");

@@ -6,7 +6,7 @@ $sql = "SELECT b.id AS 'book_id', b.title AS 'title',b.year  AS 'year'," .
     " ON b.author_id=a.id";
 $allBooks = $dbh->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
-//die(var_dump($allBooks));
+// die(var_dump($allBooks));
 
 ?>
 
@@ -30,7 +30,7 @@ $allBooks = $dbh->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         <div class="author header-item">Autor</div>
         <div class="year header-item">Godina</div>
         <div class="genre header-item">Zanr</div>
-        <div class="addBook header-item"><a href="addBook.php">Dodaj knjigu<a></div>
+        <div class="addBook header-item"><a href="add-book.php">Dodaj knjigu<a></div>
         <div class="options header-item">Opcije</div>
     </div>
 
@@ -43,8 +43,8 @@ $allBooks = $dbh->query($sql)->fetchAll(PDO::FETCH_ASSOC);
                 "<div class='year'>" . ucfirst($book['year']) . "</div>" .
                 "<div class='genre'>" . ucfirst($book['genre']) . "</div>" .
                 "<div class ='options'>" .
-                "<div class='update-user-btn'><a href='update_book.php?id=" . $book['book_id'] . "'>Izmeni</a></div>" .
-                "<div class='delete-user-btn'><a href='delete_book.php?id=" . $book['book_id'] . "'>Izbrisi</a></div>" .
+                "<div class='update-user-btn'><a href='update-book.php?id=" . $book['book_id'] . "'>Izmeni</a></div>" .
+                "<div class='delete-user-btn'><a href='handlers/delete-book.php?id=" . $book['book_id'] . "'>Izbrisi</a></div>" .
                 "</div>";
             $content .= " </div>";
             echo $content;

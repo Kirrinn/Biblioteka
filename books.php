@@ -37,7 +37,7 @@ foreach ($allBooks as $knjiga) {
         if ($knjiga['book_user_id']) {
             $content .="<div class='busy'>Izdata</div>";
         } else {
-            $content .= "<div class='rent'> <a href='rent.php?id=" . $knjiga['id'] . "'>Iznajmi</a>" . "</div>";
+            $content .= "<div class='rent'> <a href='handlers/rent.php?id=" . $knjiga['id'] . "'>Iznajmi</a>" . "</div>";
         }
         
         $content .= " </div>";

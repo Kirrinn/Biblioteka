@@ -14,7 +14,7 @@ $userExists = $dbh->query($check)->fetchAll(PDO::FETCH_ASSOC);
 if (!$userExists) {
     $sql = "DELETE FROM USERS WHERE id=?";
     $dbh->prepare($sql)->execute([$userId]);
-    header("Location:../index.php");
+    header("Location: ../index.php");
 } else { 
    echo '<script type="text/javascript">
         alert("Korisnik poseduje knjigu");

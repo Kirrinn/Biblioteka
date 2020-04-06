@@ -12,4 +12,4 @@ if (isset($_SESSION['user_id'])) {
 $sql = "UPDATE books SET user_id=? WHERE id=?";
 $stm = $dbh->prepare($sql);
 $stm->execute([$userId, $bookId]);
-header("Location:../books.php");
+header("Location: ../books.php");

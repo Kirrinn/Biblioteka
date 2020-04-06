@@ -33,7 +33,7 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['role_id'])) {
         <div class="login-title">
             LOGIN
         </div>
-        <form class="login-form" method="POST" action="login.php">
+        <form class="login-form" method="POST" action="handlers/login.php">
             <div class="form-item">
                 <input type="text" name="username" autocomplete="off" placeholder="Enter your name" />
             </div>
@@ -47,7 +47,7 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['role_id'])) {
         </form>
         <div class="signup-btn-form">
             <div class="signup-btn">
-                <a href="signupPage.php">Sign up</a>
+                <a href="signup-page.php">Sign up</a>
             </div>
         </div>
 

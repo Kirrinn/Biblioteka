@@ -24,7 +24,7 @@ $authors = $dbh->query($authorsSql)->fetchAll(PDO::FETCH_ASSOC);
     require_once("header.php");
     ?>
 
-    <form action="insertBook.php" method="POST">
+    <form action="handlers/insert-book.php" method="POST">
         <div class="form-item">
             Naziv knjige
             <input type="text" name="bookName" required autocomplete="off"> 

@@ -40,7 +40,7 @@ foreach ($allBooks as $knjiga) {
         "<div class='author'>" . $knjiga['author'] . "</div>" .
         "<div class='year'>" . ucfirst($knjiga['year']) . "</div>" .
         "<div class='genre'>" . ucfirst($knjiga['genre']) . "</div>".
-        "<div class='return-book-btn'><a href='return-book.php?id=".$knjiga['id']."' >Vrati</a></div>";        
+        "<div class='return-book-btn'><a href='handlers/return-book.php?id=".$knjiga['id']."' >Vrati</a></div>";        
         $content .= " </div>";
     echo $content;
 }

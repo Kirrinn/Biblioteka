@@ -32,8 +32,8 @@ $allUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
             "<div class='password'>" . $user['password'] . "</div>" .
             "<div class='role'>" . ucfirst($user['title']) . "</div>" .
             "<div class ='options'>" .
-            "<div class='update-user-btn'><a href='update_user.php?id=" . $user['id'] . "'>Izmeni</a></div>" .
-            "<div class='delete-user-btn'><a href='delete_user.php?id=" . $user['id'] . "'>Izbrisi</a></div>" .
+            "<div class='update-user-btn'><a href='update-user.php?id=" . $user['id'] . "'>Izmeni</a></div>" .
+            "<div class='delete-user-btn'><a href='handlers/delete-user.php?id=" . $user['id'] . "'>Izbrisi</a></div>" .
             "</div>";
 
         $content .= " </div>";

@@ -11,4 +11,4 @@ $sql = "UPDATE books SET title=?, year=?, genre_id=?, author_id=? WHERE id=?";
 $stmt = $dbh->prepare($sql);
 $stmt->execute([$title, $year, $genre, $author, $bookId]);
 
-header("Location:../index.php");
+header("Location: ../index.php");
