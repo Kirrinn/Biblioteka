@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php");
 $sql = "SELECT b.id AS 'book_id', b.title AS 'title',b.year  AS 'year'," .
     " g.title AS 'genre', a.name AS 'author', b.user_id AS 'user_id' " .
     "FROM books b LEFT JOIN genres g ON b.genre_id = g.id LEFT JOIN authors a" .
@@ -16,7 +16,7 @@ $allBooks = $dbh->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Moderator</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>

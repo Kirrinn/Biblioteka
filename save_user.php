@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php");
 //var_dump($_POST);
 $userId = $_POST['id'];
 $userName = $_POST['ime'];

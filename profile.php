@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php");
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -19,7 +19,7 @@ $allBooks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Biblioteka</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>

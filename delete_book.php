@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php");
 $bookId = $_GET['id'];
 
 $sql = "DELETE FROM books WHERE id=?";

@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php");
 $bookId = $_GET['id'];
 
 $sql = "SELECT b.title AS 'title',b.year AS 'year', g.title AS 'genre',".
@@ -22,7 +22,7 @@ $authors = $dbh->query($authorsSql)->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Update book</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>

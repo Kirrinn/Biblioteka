@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("database.php");
+require_once("db/connection.php");
 
 $username = $_POST['username'];
 $password = $_POST['pass'];

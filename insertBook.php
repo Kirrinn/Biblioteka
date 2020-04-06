@@ -1,6 +1,6 @@
 <?php
 
-require_once("database.php");
+require_once("db/connection.php");
 
 $bookName = $_POST['bookName'];
 $bookYear = $_POST['bookYear'];

@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php");
 
 $sql = "SELECT users.name, users.password, roles.title,users.id FROM users LEFT JOIN roles ON users.role_id = roles.id";
 $stmt = $dbh->query($sql);
@@ -11,7 +11,7 @@ $allUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Admin</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>

@@ -1,5 +1,5 @@
 <?php 
-require_once("database.php");
+require_once("db/connection.php");
 
 $title = $_POST['title'];
 $year = $_POST['year'];

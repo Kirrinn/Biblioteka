@@ -1,6 +1,6 @@
 <?php
 require_once("header.php");
-require_once("database.php");
+require_once("db/connection.php");
 
 $sqlQuery = "SELECT b.id AS 'id', b.title AS 'title', " .
     "b.year AS 'year', g.title AS 'genre', a.name AS 'author', " .
@@ -15,7 +15,7 @@ $allBooks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Biblioteka</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>

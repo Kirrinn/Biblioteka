@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php.php");
 
 $genresSql = "SELECT * FROM genres";
 $genres = $dbh->query($genresSql)->fetchAll(PDO::FETCH_ASSOC);
@@ -16,7 +16,7 @@ $authors = $dbh->query($authorsSql)->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Add book</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>

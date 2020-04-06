@@ -1,6 +1,6 @@
 <?php
 
-require_once("database.php");
+require_once("db/connection.php");
 
 $userId = $_GET['id'];
 

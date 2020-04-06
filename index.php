@@ -24,7 +24,7 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['role_id'])) {
 
 <head>
     <title>Biblioteka</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body bgcolor="lightblue">

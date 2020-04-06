@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once("db/connection.php");
 $userId = $_GET['id'];
 
 $sql = "SELECT users.name, users.password, users.role_id, roles.title FROM users LEFT JOIN roles ON users.role_id = roles.id WHERE users.id = " . $userId;
@@ -15,7 +15,7 @@ $roles = $res->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Update user</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>
