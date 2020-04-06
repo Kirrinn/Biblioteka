@@ -1,6 +1,6 @@
 <?php
 
-require_once("db/connection.php");
+require_once("../db/connection.php");
 
 $bookName = $_POST['bookName'];
 $bookYear = $_POST['bookYear'];
@@ -41,6 +41,6 @@ if($authorNameText != "")
 
 $addSQL = "INSERT INTO books(title, year, genre_id, author_id) VALUES(?,?,?,?)";
 $dbh->prepare($addSQL)->execute([$bookName,$bookYear,$genreId,$authorId]);
-header("Location:index.php");
+header("Location:../index.php");
 //dodaje knjigu
 
