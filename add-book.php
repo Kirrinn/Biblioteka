@@ -6,7 +6,7 @@ $genres = $dbh->query($genresSql)->fetchAll(PDO::FETCH_ASSOC);
 
 $authorsSql = "SELECT * FROM authors";
 $authors = $dbh->query($authorsSql)->fetchAll(PDO::FETCH_ASSOC);
-
+$nemanja = 1;
 
 ?>
 
